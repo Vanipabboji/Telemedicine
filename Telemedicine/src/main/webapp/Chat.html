@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthe care</title>
+    <link rel="stylesheet" href="Chatstyles.css">
+    
+</head>
+<body>
+    <!--Header Start-->
+    <header class="header">
+        <a href="services.html">Back</a>
+        <h2>Welcome Buddy..!</h2>
+        <a href="index.html">Home</a>
+    </header>
+    <div class="left-side">
+        <a href="fever.html" target="index7" onclick="updateIframeDimensions();">Fever</a><br>
+        <a href="nutrition.html"target="index7" onclick="updateIframeDimensions();">Nutritions</a><br>
+        <a href="mental.html"target="index7" onclick="updateIframeDimensions();">Mental Issues</a><br>
+        <a href="pediatrics.html" target="index7" onclick="updateIframeDimensions();">Pediatrics</a><br>
+        <a href="dermo.html" target="index7" onclick="updateIframeDimensions();"> Dermatology</a><br>
+        <a href="cold.html" target="index7" onclick="updateIframeDimensions();">Cold Problem</a><br>
+        <a href="diabities.html" target="index7" onclick="updateIframeDimensions();">Diabetes</a><br>
+        
+
+    </div>
+    <div class="right-side">
+        <iframe src="" id="myIframe" name="index7"  frameborder="0" ></iframe>
+    
+    </div>
+    <script>
+        // Function to update iframe dimensions based on div size
+        let count=0;
+        function updateIframeDimensions() {
+            var container = document.getElementsByClassName("right-side");
+            var iframe = document.getElementById("myIframe");
+            
+            // Set iframe dimensions based on the size of the container div
+            iframe.style.width = container.clientWidth + 'px';
+            iframe.style.height = container.clientHeight + 'px';
+            console.log('called'+ count++);
+        }
+        
+
+        // Call the function initially and add an event listener for window resize
+        updateIframeDimensions();
+        window.addEventListener('resize', updateIframeDimensions);
+    </script>
+
+</body>
+</html>

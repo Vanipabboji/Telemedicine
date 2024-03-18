@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Now</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;500&display=swap');
+        *{
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none; border: none;
+            text-transform: capitalize;
+            transition: all .2s ease-out;
+            text-decoration: none;
+        }
+        body{
+            background:url("assets/background2.jpg") no-repeat fixed;
+            background-size: cover;
+
+            
+        }
+        div{
+            margin-right: 10px;
+            text-align: right;
+            
+        }
+        h1{
+            margin: 20px;
+            color: #0f5447;
+            text-shadow: -0.3rem .4rem  rgba(0,0,0,.2);
+        }
+        input{
+            margin-left: 10px;
+            padding: 3px 5px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        .btn{
+            text-decoration: none;
+            color: #e0dddd;
+            padding: 0.5rem 0.5rem;
+            outline: none;   
+            border: none;
+            font-size: 1rem;
+            background-color:#0f5447;
+            border: 1px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-bottom: 10px;
+            
+        }
+        .btn:hover{
+            color: #0f5447;
+            background:#e0dddd ;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        p{
+            margin: 20px 10px;
+        }
+        .btnHome{
+            font-size: 1rem;
+            text-decoration: none;
+            color: #e0dddd;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px 8px;
+            cursor: pointer;
+            background: #0f5447;
+        }
+        .btnHome:hover{
+            color: #0f5447;
+            background: #e0dddd;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Register To Get The Services</h1>
+        <form class="form" action="signup" method="post">
+            <label for="username">Create Username: </label>
+            <input type="text" name="username" placeholder="Enter Your Username" required><br><br>
+            <label for="Fname">First Name: </label>
+            <input type="text" name="Fname"  placeholder="Enter your First Name" required><br><br>
+            <label for="">Last Name: </label>
+            <input type="text" name="Lname" placeholder="Enter your Last Name" required><br><br>
+            <label>Email ID: </label>
+            <input type="email" name="email" placeholder="Enter your Email Id" required><br><br>
+            <label>Mobile Number: </label>
+            <input type="tel" name="mobile" placeholder="Enter your Mobile Number" required><br><br>
+            <label>Create Password: </label>
+            <input type="password" name="password" placeholder="Enter Your Password" required><br><br>
+            <label>Confirm Password: </label>
+            <input type="password" name="Confirmpassword" placeholder="Re-enter Your Password" required><br><br>
+            <input type="submit" value="submit" class="btn">
+        </form>
+        <p>Already registered, click hear to <a href="loginPage.html" id="login">Login</a>.</p>
+        <p><a href="index.html" class="btnHome">Home</a></p>
+    </div>
+    
+    
+</body>
+</html>
